@@ -26,7 +26,7 @@ describe("Send Money Negative Test", () => {
 
   })
 
-  it("TC03 - Amount is negative (-100)", () => {
+  it("TC03 - Should NOT allow negative amount (-100)", () => {
 
     TransactionPage.selectUser("Ted Parisian")
 
@@ -57,7 +57,7 @@ describe("Send Money Negative Test", () => {
 
   })
 
-  it("TC05 - Amount is text", () => {
+  it("TC05 - Should NOT allow Amount is text", () => {
     TransactionPage.selectUser("Ted Parisian")
     TransactionPage.enterAmount("abc")
     TransactionPage.enterNote("text amount")
@@ -66,7 +66,7 @@ describe("Send Money Negative Test", () => {
     
   })
 
-  it("TC06 - Amount is empty", () => {
+  it("TC06 - Should NOT allow Amount is empty", () => {
 
     TransactionPage.selectUser("Ted Parisian")
 
